@@ -1,0 +1,73 @@
+---
+title: "Propuesta"
+format: html
+editor: visual
+---
+
+Para la implementación del servicio de roaming internacional a tarifa local, se recomienda lo siguiente:
+
+#### Servicio de Datos móviles
+
+1. Debido a que las tarifas de **datos móviles en el servicio de roaming internacional** con Chile de los prestadores Claro y Movistar están a los niveles del promedio de la tarifa local en Ecuador se debe disponer: 
+
+- _Los operadores CONECEL S.A. y OTECEL S.A. aplicarán las mismas condiciones tarifarias o planes tarifarios (incluyendo promociones), que se ofertan en Ecuador a las tarifas de datos móviles en el servicio de roaming internacional con Chile._
+
+2. Para el prestador CNT E.P. las tarifas de datos móviles en el servicio de roaming internacional con Chile deben ser menores a **USD 0.7013** por MB, que corresponde a la suma del promedio de la tarifa local de datos móviles (USD 0.0013) y del valor más alto del cargo IoT mayorista acordado entre CNT E.P. y las prestadoras del servicio móvil de Chile ( uSD 0.7).
+
+#### Servicio de Mensajería SMS saliente
+
+1. Las tarifas de **SMS en el servicio de roaming internacional** con Chile del prestador Claro están a los niveles del promedio de la tarifa local en Ecuador se debe disponer:
+
+- _El operador CONECEL S.A. aplicará las mismas condiciones tarifarias o planes tarifarios (incluyendo promociones), que se ofertan en Ecuador a las tarifas de SMS en el servicio de roaming internacional con Chile._
+
+2. Para el prestador OTECEL S.A. las tarifas de SMS en el servicio de roaming internacional con Chile deben ser menores a **USD 0.103** por mensaje, que corresponde a la suma del promedio de la tarifa local de SMS (USD 0.0916) y del valor más alto del cargo IoT mayorista acordado entre OTECEL S.A. y las prestadoras del servicio móvil de Chile ( uSD 0.012).
+
+3. Para el prestador CNT E.P. las tarifas de SMS en el servicio de roaming internacional con Chile deben ser menores a **USD 0.103** por mensaje, que corresponde a la suma del promedio de la tarifa local de SMS (USD 0.033) y del valor más alto del cargo IoT mayorista acordado entre CNT E.P. y las prestadoras del servicio móvil de Chile ( uSD 0.07).  
+
+
+#### Servicio de Mensajería SMS entrante
+1. Sin costo.
+
+
+#### Servicio de Voz Saliente
+
+1.  Para los prestadores CONECEL S.A., OTECEL S.A. y CNT E.P. las tarifas de voz saliente en el servicio de roaming internacional con Chile deben ser menores a **USD 0.3879** por minuto, que corresponde a la suma del promedio de la tarifa local de voz saliente más alta (USD 0.0379) y del valor más alto del cargo IoT mayorista acordado entre los prestadores de Ecuador y las prestadoras del servicio móvil de Chile ( uSD 0.35). 
+
+
+#### Servicio de Voz Entrante
+
+1. Para los prestadores CONECEL S.A., OTECEL S.A. y CNT E.P. las tarifas de voz entrante en el servicio de roaming internacional con Chile deben ser menores a **USD 0.10** por minuto, que corresponde a la suma del promedio de la tarifa local de voz entrante más alta (USD 0.0) y del valor más alto del cargo IoT mayorista acordado entre los prestadores de Ecuador y las prestadoras del servicio móvil de Chile ( uSD 0.10).
+
+<br>
+```{r echo=FALSE}
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(DT)
+  library(knitr)
+  library(stringr) # to regex
+})
+
+topes <- read_excel("./data/tarifas_topes.xlsx")
+
+for (i in 1:5) {
+  topes[,i] <- suppressWarnings(lapply(topes[,i], function(x){
+    ifelse(str_detect(x, "\\d"), round(as.numeric(x), 4), x)
+  }))
+}
+
+DT::datatable(topes)
+
+```
+<br>
+
+
+#### Recomendación
+Se recomienda poner una disposición en la que los topes tarifarios tengan una duración de un año hasta que las prestadoras de Ecuador procedan a negociar con sus pares de Chile cargos de IoT a valores menores.
+
+Una vez establecido el año se establecería lo siguiente:
+
+- _Los operadores CONECEL S.A., OTECEL S.A. y CNT E.P. aplicarán las mismas condiciones tarifarias o planes tarifarios (incluyendo promociones), que se ofertan en Ecuador a las tarifas de voz saliente, voz entrante, SMS y datos móviles en el servicio de roaming internacional con Chile._
+
+
+

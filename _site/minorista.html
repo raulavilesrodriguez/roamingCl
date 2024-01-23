@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Servicio de Roaming Ecuador Chile - Mercado Minorista</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.28/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.4/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.4/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="site_libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+<script src="site_libs/highcharts-9.3.1/highcharts.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-3d.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-more.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/stock.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/map.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/drilldown.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/item-series.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/annotations.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/export-data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/funnel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/heatmap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/treemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sankey.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/organization.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sunburst.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/vector.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/xrange.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/tilemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/venn.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/gantt.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/timeline.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/bullet.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/lollipop.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/series-label.js"></script>
+<script src="site_libs/highcharts-9.3.1/plugins/motion.js"></script>
+<script src="site_libs/highcharts-9.3.1/custom/reset.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/boost.js"></script>
+<script src="site_libs/highchart-binding-0.9.4/highchart.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar docked fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./usuarios.html">Análisis</a></li><li class="breadcrumb-item"><a href="./minorista.html">Mercado Minorista</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Servicio de Roaming Ecuador Chile</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Introducción</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Servicio de Roaming Ecuador y Chile</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pedido_info.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Solicitud de Información</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Análisis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./usuarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Usuarios</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mayoristaClaro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mercado Mayorista - CLARO</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mayoristaMovi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mercado Mayorista - MOVISTAR</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mayoristaCnt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mercado Mayorista - CNT E.P.</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./minorista.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Mercado Minorista</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Propuesta</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./propuesta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Propuesta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mercado Minorista</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="tarifas-minoristas-en-el-servicio-de-roaming-con-chile" class="level4">
+<h4 class="anchored" data-anchor-id="tarifas-minoristas-en-el-servicio-de-roaming-con-chile">Tarifas Minoristas en el Servicio de Roaming con Chile</h4>
+<p>Las tarifas que el usuario final paga por el servicio de Roaming con Chlie son las siguientes:</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2a53b74334669f3ee153" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2a53b74334669f3ee153">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4"],["VOZ (USD/min) saliente","VOZ (USD/min) entrante","SMS (USD/evento)","DATOS (USD/MB)"],[0.1,0.1,0.1,0.0054],[1.5,1.5,0.3,0.0013],[1.35,1.2,0.3,1.38]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>SERVICIO<\/th>\n      <th>Claro<\/th>\n      <th>Movistar<\/th>\n      <th>CNT E.P.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-275cf9ed4de85937ea46" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-275cf9ed4de85937ea46">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"<b>Tarifas Minoristas Servicio Roaming Chile-Ecuador<\/b>"},"yAxis":{"title":{"text":"tarifas"},"type":"linear"},"credits":{"enabled":false,"enable":true,"text":"https://github.com/raulavilesrodriguez"},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"CNT E.P.","data":[{"SERVICIO":"VOZ (USD/min) saliente","operadora":"CNT E.P.","tarifas":1.35,"y":1.35,"name":"VOZ (USD/min) saliente"},{"SERVICIO":"VOZ (USD/min) entrante","operadora":"CNT E.P.","tarifas":1.2,"y":1.2,"name":"VOZ (USD/min) entrante"},{"SERVICIO":"SMS (USD/evento)","operadora":"CNT E.P.","tarifas":0.3,"y":0.3,"name":"SMS (USD/evento)"},{"SERVICIO":"DATOS (USD/MB)","operadora":"CNT E.P.","tarifas":1.38,"y":1.38,"name":"DATOS (USD/MB)"}],"type":"column"},{"name":"Claro","data":[{"SERVICIO":"VOZ (USD/min) saliente","operadora":"Claro","tarifas":0.1,"y":0.1,"name":"VOZ (USD/min) saliente"},{"SERVICIO":"VOZ (USD/min) entrante","operadora":"Claro","tarifas":0.1,"y":0.1,"name":"VOZ (USD/min) entrante"},{"SERVICIO":"SMS (USD/evento)","operadora":"Claro","tarifas":0.1,"y":0.1,"name":"SMS (USD/evento)"},{"SERVICIO":"DATOS (USD/MB)","operadora":"Claro","tarifas":0.0054,"y":0.0054,"name":"DATOS (USD/MB)"}],"type":"column"},{"name":"Movistar","data":[{"SERVICIO":"VOZ (USD/min) saliente","operadora":"Movistar","tarifas":1.5,"y":1.5,"name":"VOZ (USD/min) saliente"},{"SERVICIO":"VOZ (USD/min) entrante","operadora":"Movistar","tarifas":1.5,"y":1.5,"name":"VOZ (USD/min) entrante"},{"SERVICIO":"SMS (USD/evento)","operadora":"Movistar","tarifas":0.3,"y":0.3,"name":"SMS (USD/evento)"},{"SERVICIO":"DATOS (USD/MB)","operadora":"Movistar","tarifas":0.0013,"y":0.0013,"name":"DATOS (USD/MB)"}],"type":"column"}],"xAxis":{"type":"category","title":{"text":"SERVICIO"},"categories":null},"subtitle":{"text":"País: Ecuador"},"tooltip":{"shared":true,"formatter":"function(tooltip){\n          function isArray(obj) {\n          return Object.prototype.toString.call(obj) === '[object Array]';\n          }\n\n          function splat(obj) {\n          return isArray(obj) ? obj : [obj];\n          }\n\n          var items = this.points || splat(this), series = items[0].series, s;\n\n          // sort the values\n          items.sort(function(a, b){\n          return ((a.y < b.y) ? -1 : ((a.y > b.y) ? 1 : 0));\n          });\n          items.reverse();\n\n          return tooltip.defaultFormatter.call(this, tooltip);\n        }","useHTML":true,"headerFormat":"<small>{point.key}<\/small><table>","pointFormat":"<tr><td style=\"color: {series.color}\">{series.name}: <\/td><td style=\"text-align: right\"><b>{point.y}<\/b><\/td><\/tr>","footerFormat":"<\/table>"},"caption":{"text":"Elaborado: Byron Raúl Avilés Rodríguez"}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"backgroundColor":"#161C20","style":{"fontFamily":"Roboto","color":"#666666"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom","itemStyle":{"color":"#424242"}},"xAxis":{"gridLineColor":"#424242","gridLineWidth":1,"minorGridLineColor":"#424242","minoGridLineWidth":0.5,"tickColor":"#424242","minorTickColor":"#424242","lineColor":"#424242"},"yAxis":{"gridLineColor":"#424242","ridLineWidth":1,"minorGridLineColor":"#424242","inoGridLineWidth":0.5,"tickColor":"#424242","minorTickColor":"#424242","lineColor":"#424242"},"plotOptions":{"line":{"marker":{"enabled":false}},"spline":{"marker":{"enabled":false}},"area":{"marker":{"enabled":false}},"areaspline":{"marker":{"enabled":false}},"arearange":{"marker":{"enabled":false}},"bubble":{"maxSize":"10%"}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-a218be4698a9042bddbe" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-a218be4698a9042bddbe">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"<b>Tarifas Minoristas Servicio de Datos Roaming Chile-Ecuador<\/b>"},"yAxis":{"title":{"text":"tarifas"},"type":"linear"},"credits":{"enabled":false,"enable":true,"text":"https://github.com/raulavilesrodriguez"},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"CNT E.P.","data":[{"SERVICIO":"DATOS (USD/MB)","operadora":"CNT E.P.","tarifas":1.38,"y":1.38,"name":"DATOS (USD/MB)"}],"type":"column"},{"name":"Claro","data":[{"SERVICIO":"DATOS (USD/MB)","operadora":"Claro","tarifas":0.0054,"y":0.0054,"name":"DATOS (USD/MB)"}],"type":"column"},{"name":"Movistar","data":[{"SERVICIO":"DATOS (USD/MB)","operadora":"Movistar","tarifas":0.0013,"y":0.0013,"name":"DATOS (USD/MB)"}],"type":"column"}],"xAxis":{"type":"category","title":{"text":"SERVICIO"},"categories":null},"subtitle":{"text":"País: Ecuador"},"tooltip":{"shared":true,"formatter":"function(tooltip){\n          function isArray(obj) {\n          return Object.prototype.toString.call(obj) === '[object Array]';\n          }\n\n          function splat(obj) {\n          return isArray(obj) ? obj : [obj];\n          }\n\n          var items = this.points || splat(this), series = items[0].series, s;\n\n          // sort the values\n          items.sort(function(a, b){\n          return ((a.y < b.y) ? -1 : ((a.y > b.y) ? 1 : 0));\n          });\n          items.reverse();\n\n          return tooltip.defaultFormatter.call(this, tooltip);\n        }","useHTML":true,"headerFormat":"<small>{point.key}<\/small><table>","pointFormat":"<tr><td style=\"color: {series.color}\">{series.name}: <\/td><td style=\"text-align: right\"><b>{point.y}<\/b><\/td><\/tr>","footerFormat":"<\/table>"},"caption":{"text":"Elaborado: Byron Raúl Avilés Rodríguez"}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"backgroundColor":"#161C20","style":{"fontFamily":"Roboto","color":"#666666"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom","itemStyle":{"color":"#424242"}},"xAxis":{"gridLineColor":"#424242","gridLineWidth":1,"minorGridLineColor":"#424242","minoGridLineWidth":0.5,"tickColor":"#424242","minorTickColor":"#424242","lineColor":"#424242"},"yAxis":{"gridLineColor":"#424242","ridLineWidth":1,"minorGridLineColor":"#424242","inoGridLineWidth":0.5,"tickColor":"#424242","minorTickColor":"#424242","lineColor":"#424242"},"plotOptions":{"line":{"marker":{"enabled":false}},"spline":{"marker":{"enabled":false}},"area":{"marker":{"enabled":false}},"areaspline":{"marker":{"enabled":false}},"arearange":{"marker":{"enabled":false}},"bubble":{"maxSize":"10%"}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br> Por otro lado, las tarifas minoristas a nivel local que fueron calculadas a través de la información de contabilidad separada y de tráfico son:</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cb1d92786e602c2bf894" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cb1d92786e602c2bf894">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4"],["Claro","Movistar","CNT E.P.","Mercado"],[0.00784,0.00128,0.00127,0.00276],[0.0112,0.01751,0.03788,0.01308],[0.12233,0.09157,0.03284,0.10265]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Operadora<\/th>\n      <th>Average Datos (USD/MB)<\/th>\n      <th>Average Voz (USD/min)<\/th>\n      <th>Average SMS (USD/mensaje)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-93b73878b19c8159135d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-93b73878b19c8159135d">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"<b>Tarifas Minoristas a nivel local Ecuador<\/b>"},"yAxis":{"title":{"text":"tarifas"},"type":"linear"},"credits":{"enabled":false,"enable":true,"text":"https://github.com/raulavilesrodriguez"},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"Average Datos (USD/MB)","data":[{"Operadora":"Claro","indicador":"Average Datos (USD/MB)","tarifas":0.00784,"y":0.00784,"name":"Claro"},{"Operadora":"Movistar","indicador":"Average Datos (USD/MB)","tarifas":0.00128,"y":0.00128,"name":"Movistar"},{"Operadora":"CNT E.P.","indicador":"Average Datos (USD/MB)","tarifas":0.00127,"y":0.00127,"name":"CNT E.P."},{"Operadora":"Mercado","indicador":"Average Datos (USD/MB)","tarifas":0.00276,"y":0.00276,"name":"Mercado"}],"type":"column"},{"name":"Average SMS (USD/mensaje)","data":[{"Operadora":"Claro","indicador":"Average SMS (USD/mensaje)","tarifas":0.12233,"y":0.12233,"name":"Claro"},{"Operadora":"Movistar","indicador":"Average SMS (USD/mensaje)","tarifas":0.09157,"y":0.09157,"name":"Movistar"},{"Operadora":"CNT E.P.","indicador":"Average SMS (USD/mensaje)","tarifas":0.03284,"y":0.03284,"name":"CNT E.P."},{"Operadora":"Mercado","indicador":"Average SMS (USD/mensaje)","tarifas":0.10265,"y":0.10265,"name":"Mercado"}],"type":"column"},{"name":"Average Voz (USD/min)","data":[{"Operadora":"Claro","indicador":"Average Voz (USD/min)","tarifas":0.0112,"y":0.0112,"name":"Claro"},{"Operadora":"Movistar","indicador":"Average Voz (USD/min)","tarifas":0.01751,"y":0.01751,"name":"Movistar"},{"Operadora":"CNT E.P.","indicador":"Average Voz (USD/min)","tarifas":0.03788,"y":0.03788,"name":"CNT E.P."},{"Operadora":"Mercado","indicador":"Average Voz (USD/min)","tarifas":0.01308,"y":0.01308,"name":"Mercado"}],"type":"column"}],"xAxis":{"type":"category","title":{"text":"Operadora"},"categories":null},"subtitle":{"text":"País: Ecuador"},"tooltip":{"shared":true,"formatter":"function(tooltip){\n          function isArray(obj) {\n          return Object.prototype.toString.call(obj) === '[object Array]';\n          }\n\n          function splat(obj) {\n          return isArray(obj) ? obj : [obj];\n          }\n\n          var items = this.points || splat(this), series = items[0].series, s;\n\n          // sort the values\n          items.sort(function(a, b){\n          return ((a.y < b.y) ? -1 : ((a.y > b.y) ? 1 : 0));\n          });\n          items.reverse();\n\n          return tooltip.defaultFormatter.call(this, tooltip);\n        }","useHTML":true,"headerFormat":"<small>{point.key}<\/small><table>","pointFormat":"<tr><td style=\"color: {series.color}\">{series.name}: <\/td><td style=\"text-align: right\"><b>{point.y}<\/b><\/td><\/tr>","footerFormat":"<\/table>"},"caption":{"text":"Elaborado: Byron Raúl Avilés Rodríguez"}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"backgroundColor":"#161C20","style":{"fontFamily":"Roboto","color":"#666666"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom","itemStyle":{"color":"#424242"}},"xAxis":{"gridLineColor":"#424242","gridLineWidth":1,"minorGridLineColor":"#424242","minoGridLineWidth":0.5,"tickColor":"#424242","minorTickColor":"#424242","lineColor":"#424242"},"yAxis":{"gridLineColor":"#424242","ridLineWidth":1,"minorGridLineColor":"#424242","inoGridLineWidth":0.5,"tickColor":"#424242","minorTickColor":"#424242","lineColor":"#424242"},"plotOptions":{"line":{"marker":{"enabled":false}},"spline":{"marker":{"enabled":false}},"area":{"marker":{"enabled":false}},"areaspline":{"marker":{"enabled":false}},"arearange":{"marker":{"enabled":false}},"bubble":{"maxSize":"10%"}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br></p>
+<p><strong>Conclusiones</strong>.- Del análisis realizado se determina que:</p>
+<ul>
+<li>Claro y Movistar ofertan planes del servicio de roaming internacional con Chile cuyas tarifas de datos móviles están en los niveles promedios a las tarifas minoristas a nivel local en Ecuador del servicio mencionado.</li>
+<li>Claro oferta planes del servicio de roaming internacional con Chile cuyas tarifas de SMS están en los niveles promedios a las tarifas minoristas a nivel local en Ecuador del servicio mencionado.</li>
+<li>Para el servicio de datos móviles ya se está implementando por parte de las operadoras Claro y Movistar el servicio de roaming internacional a tarifa local.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

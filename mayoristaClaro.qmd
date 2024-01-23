@@ -1,0 +1,101 @@
+---
+title: "Mercado Mayorista - CLARO"
+format: html
+---
+
+#### CLARO
+Los cargos IoT de la empresa CLARO (CONECEL S.A.) con operadoras de Chile se realizan a través de la negociación entre las partes. Para llamadas saliente origen como llamadas locales, SMS y datos móviles **los cargos mayoristas negociados entre operadoras son recíprocos**.
+
+##### Tarifas de Claro Ecuador cuando los usuarios de Chile visitan sus redes (Inbound)
+
+```{r echo=FALSE}
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(DT)
+})
+
+iot.claro.inbound <- read_excel("./data/iot_claro_inbound.xlsx")
+
+DT::datatable(iot.claro.inbound)
+
+```
+
+
+
+##### Tarifas de operadoras de Chile cuando los clientes de Claro Ecuador visitan sus redes (Outbound)
+
+```{r echo=FALSE}
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(DT)
+})
+
+iot.claro.outbound <- read_excel("./data/iot_claro_outbound.xlsx")
+
+DT::datatable(iot.claro.outbound)
+
+```
+
+En este contexto se analiza el tráfico outbound versus el tráfico inbound en el periodo analizado, obteniéndose una relación positiva en los diferentes servicios:
+- La relación de tráfico de Voz inbound vs outbound es igual a 2.58.
+- La relación de tráfico SMS inbound vs outbound es igual a 2.03.
+- La relación de tráfico de Datos móviles inboudn vs outbound es igual a 2.78.
+
+```{r echo=FALSE}
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(highcharter) #Interactive Plot
+})
+
+trafico.claro <- read_excel("./data/trafico_claro.xlsx")
+voz.claro <- trafico.claro |> select(Fecha, `VOZ TOTAL TRAFICO Outbound`, `VOZ TOTAL TRAFICO Inbound`)
+
+voz.claro2 <- pivot_longer(voz.claro, cols=2:3, names_to = 'tipo', values_to = 'tráfico_voz')
+
+voz.claro2$Fecha <- as.Date(voz.claro2$Fecha)
+
+hchart(voz.claro2, "line", hcaes(x = Fecha, y = tráfico_voz, group = tipo)) |>
+  hc_title(text="<b>Tráfico Voz Claro Roaming Chile-Ecuador</b>") |>
+  hc_subtitle(text = 'Country: Ecuador') |> 
+  hc_credits(enable = TRUE, text = 'https://github.com/raulavilesrodriguez') |>
+  hc_tooltip(sort = TRUE, table = TRUE) |>
+  hc_caption(text = 'Elaborated: Byron Raúl Avilés Rodríguez') |>
+  hc_add_theme(hc_theme_darkunica())
+
+
+sms.claro <- trafico.claro |> select(Fecha, `SMS TOTAL TRAFICO Outbound`, `SMS TOTAL TRAFICO Inbound`)
+
+sms.claro2 <- pivot_longer(sms.claro, cols=2:3, names_to = 'tipo', values_to = 'tráfico_sms')
+
+sms.claro2$Fecha <- as.Date(sms.claro2$Fecha)
+
+hchart(sms.claro2, "line", hcaes(x = Fecha, y = tráfico_sms, group = tipo)) |>
+  hc_title(text="<b>Tráfico SMS Claro Roaming Chile-Ecuador</b>") |>
+  hc_subtitle(text = 'Country: Ecuador') |> 
+  hc_credits(enable = TRUE, text = 'https://github.com/raulavilesrodriguez') |>
+  hc_tooltip(sort = TRUE, table = TRUE) |>
+  hc_caption(text = 'Elaborated: Byron Raúl Avilés Rodríguez') |>
+  hc_add_theme(hc_theme_darkunica())
+
+datos.claro <- trafico.claro |> select(Fecha, `DATOS TRAFICO Outbound (MB)`, `DATOS TRAFICO Inbound (MB)`)
+
+datos.claro2 <- pivot_longer(datos.claro, cols=2:3, names_to = 'tipo', values_to = 'tráfico_datos')
+
+datos.claro2$Fecha <- as.Date(datos.claro2$Fecha)
+
+hchart(datos.claro2, "line", hcaes(x = Fecha, y = tráfico_datos, group = tipo)) |>
+  hc_title(text="<b>Tráfico Datos Claro Roaming Chile-Ecuador</b>") |>
+  hc_subtitle(text = 'Country: Ecuador') |> 
+  hc_credits(enable = TRUE, text = 'https://github.com/raulavilesrodriguez') |>
+  hc_tooltip(sort = TRUE, table = TRUE) |>
+  hc_caption(text = 'Elaborated: Byron Raúl Avilés Rodríguez') |>
+  hc_add_theme(hc_theme_darkunica())
+
+```
+
+
+**Conclusión**.- Claro en el mercado mayorista del servicio de roaming interncional con las operadoras de Chile, obtuvo beneficios económicos en el periodo analizado (enero 2022 - septiembre 2023), debido a que la relación de tráfico Inbound versus el tráfico Outbound de los servicios de voz, sms y datos es mayor a 1.
+

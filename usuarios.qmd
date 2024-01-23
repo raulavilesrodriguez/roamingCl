@@ -1,0 +1,74 @@
+---
+title: "Usuarios"
+---
+
+#### CLARO
+La empresa CLARO (CONECEL S.A.) <https://www.claro.com.ec/personas-b/>, en el periodo de enero de 2022 a septiembre de 2023 registra en promedio 1,126 usuarios Outbound y 4,662 usuarios Inbound en el servicio de roaming internacional con el país de Chile, con un crecimiento de 108% en usuarios Outbound (usuarios Claro Ecuador en Chile).
+
+```{r echo=FALSE}
+
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(highcharter) #Interactive Plot
+})
+
+usuarios.claro <- read_excel("./data/usuarios_claro.xlsx")
+
+#mean(usuarios.claro$usuarios_outbound)
+#mean(usuarios.claro$usuarios_inbound)
+
+tail(usuarios.claro)
+
+usuarios.claro2 <- pivot_longer(usuarios.claro, cols=2:3, names_to = 'tipo', values_to = 'usuarios')
+
+usuarios.claro2$fecha <- as.Date(usuarios.claro2$fecha)
+
+hchart(usuarios.claro2, "line", hcaes(x = fecha, y = usuarios, group = tipo)) |>
+  hc_title(text="<b>Usuarios Claro Roaming Chile-Ecuador</b>") |>
+  hc_subtitle(text = 'Country: Ecuador') |> 
+  hc_credits(enable = TRUE, text = 'https://github.com/raulavilesrodriguez') |>
+  hc_tooltip(sort = TRUE, table = TRUE) |>
+  hc_caption(text = 'Elaborated: Byron Raúl Avilés Rodríguez') |>
+  hc_add_theme(hc_theme_darkunica())
+
+```
+
+#### MOVISTAR
+La empresa MOVISTAR (OTECEL S.A.) <https://www.movistar.com.ec>, en el periodo de enero de 2022 a septiembre de 2023 registra en promedio 500 usuarios Outbound en el servicio de roaming internacional con el país de Chile, con un crecimiento de 76.6% en usuarios Outbound (usuarios Movistar Ecuador en Chile). 
+
+
+```{r echo=FALSE}
+
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(highcharter) #Interactive Plot
+})
+
+usuarios.movi <- read_excel("./data/usuarios_movi.xlsx")
+
+tail(usuarios.movi)
+
+avMovi.outbound <- mean(usuarios.movi$usuarios)
+
+n <- nrow(usuarios.movi)
+
+variation.movi.outbound <- ((usuarios.movi[['usuarios']][n] / usuarios.movi[['usuarios']][1]) - 1)*100
+
+usuarios.movi$Fecha <- as.Date(usuarios.movi$Fecha)
+
+hchart(usuarios.movi, "line", hcaes(x = Fecha, y = usuarios)) |>
+  hc_title(text="<b>Usuarios Movistar Roaming Chile-Ecuador</b>") |>
+  hc_subtitle(text = 'Country: Ecuador') |> 
+  hc_credits(enable = TRUE, text = 'https://github.com/raulavilesrodriguez') |>
+  hc_tooltip(sort = TRUE, table = TRUE) |>
+  hc_caption(text = 'Elaborated: Byron Raúl Avilés Rodríguez') |>
+  hc_add_theme(hc_theme_darkunica())
+
+
+```
+
+
+#### CNT E.P.
+La empresa CNT E.P. <https://www.cnt.com.ec>, registró 12 usuarios Outbound en el servicio de roaming internacional con el país de Chile, a septiembre de 2023 (usuarios CNT E.P. Ecuador en Chile). 

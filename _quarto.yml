@@ -1,0 +1,27 @@
+project:
+  title: "Servicio de Roaming Ecuador Chile"
+  type: website
+
+website:
+  sidebar:
+    style: "docked"
+    type: "light"
+    background: "warning"
+    search: true
+    contents:
+      - section: "Introducción"
+        contents:
+          - index.qmd
+          - pedido_info.qmd
+      - section: "Análisis"
+        contents:
+          - usuarios.qmd
+          - mayoristaClaro.qmd
+          - mayoristaMovi.qmd
+          - mayoristaCnt.qmd
+          - minorista.qmd
+      - section: "Propuesta"
+        contents:
+          - propuesta.qmd
+          
+          

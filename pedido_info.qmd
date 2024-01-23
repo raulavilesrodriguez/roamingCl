@@ -1,0 +1,15 @@
+---
+title: "Solicitud de Información"
+format: html
+editor: visual
+---
+
+## Levantamiento de información a operadores
+Con oficio Nro. ARCOTEL-CREG-2023-0138-OF de 21 de noviembre de 2023 la ARCOTEL solicitó información a las prestadoras del servicio móvil avanzado (SMA) para la implementación del servicio de roaming internacional a tarifa local entre Ecuador y Chile.
+
+Las prestadoras remitieron la información a través de los siguientes documentos:
+
+- **CLARO**: Oficio DR-1089-2023 ingresado con documento No. ARCOTEL-DEDA-2023-018567-E de 15 de diciembre de 2023, oficio DR-0003-2024 ingresado con documento No. ARCOTEL-DEDA-2024-000030-E de 02 de enero de 2024 y oficio DR-0051-2024 ingresado con documento No.ARCOTEL-DEDA-2024-000536-E de 13 de enero de 2024.
+- **MOVISTAR**: Oficio VPR-29999-2023 de 14 de diciembre de 2023, ingresado con documento No.ARCOTEL-DEDA-2023-018559-E de 15 de diciembre de 2023.
+- **CNT**: Oficio Nro. CNTEP-GNARI-RG-2023-0627-O de 15 de diciembre de 2023 y oficio Nro. CNTEP-GNARI-RG-2023-0647-O de 26 de diciembre de 2023.
+

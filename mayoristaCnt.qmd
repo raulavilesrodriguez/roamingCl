@@ -1,0 +1,25 @@
+---
+title: "Mercado Mayorista - CNT E.P."
+format: html
+editor: visual
+---
+
+#### CNT E.P.
+
+Los cargos IoT de la empresa CNT E.P. con operadoras de Chile se realizan a través de la negociación entre las partes. Para llamadas saliente origen como llamadas locales, SMS y datos móviles **los cargos mayoristas negociados entre operadoras son recíprocos**.
+
+##### Tarifas mayoristas de CNT E.P. (Outbound y Inbound)
+
+```{r echo=FALSE}
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(DT)
+})
+
+iot.cnt <- read_excel("./data/iot_cnt.xlsx")
+
+DT::datatable(iot.cnt)
+
+```
+

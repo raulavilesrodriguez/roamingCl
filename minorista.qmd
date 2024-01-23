@@ -1,0 +1,86 @@
+---
+title: "Mercado Minorista"
+format: html
+editor: visual
+---
+
+#### Tarifas Minoristas en el Servicio de Roaming con Chile
+
+Las tarifas que el usuario final paga por el servicio de Roaming con Chlie son las siguientes:
+
+```{r echo=FALSE}
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(DT)
+  library(highcharter) #Interactive Plot
+})
+
+minoristas <- read_excel("./data/tarifas_minoristas.xlsx")
+minoristas <- minoristas |> mutate(Claro = round(Claro, 5), Movistar = round(Movistar, 5))
+
+DT::datatable(minoristas)
+
+minoristas2 <- pivot_longer(minoristas, cols=2:4, names_to = 'operadora', values_to = 'tarifas')
+
+hchart(minoristas2, "column", hcaes(SERVICIO, tarifas, group = operadora)) |>
+  hc_title(text="<b>Tarifas Minoristas Servicio Roaming Chile-Ecuador</b>") |>
+  hc_subtitle(text = 'País: Ecuador') |> 
+  hc_credits(enable = TRUE, text = 'https://github.com/raulavilesrodriguez') |>
+  hc_tooltip(sort = TRUE, table = TRUE) |>
+  hc_caption(text = 'Elaborado: Byron Raúl Avilés Rodríguez') |>
+  hc_add_theme(hc_theme_alone())
+
+minoristas2.datos <- minoristas2 |> filter(SERVICIO == 'DATOS (USD/MB)')
+
+hchart(minoristas2.datos, "column", hcaes(SERVICIO, tarifas, group = operadora)) |>
+  hc_title(text="<b>Tarifas Minoristas Servicio de Datos Roaming Chile-Ecuador</b>") |>
+  hc_subtitle(text = 'País: Ecuador') |> 
+  hc_credits(enable = TRUE, text = 'https://github.com/raulavilesrodriguez') |>
+  hc_tooltip(sort = TRUE, table = TRUE) |>
+  hc_caption(text = 'Elaborado: Byron Raúl Avilés Rodríguez') |>
+  hc_add_theme(hc_theme_alone())
+
+
+
+```
+<br>
+Por otro lado, las tarifas minoristas a nivel local que fueron calculadas a través de la información de contabilidad separada y de tráfico son:
+
+```{r echo=FALSE}
+suppressPackageStartupMessages({
+  library(readxl)
+  library(tidyverse)
+  library(DT)
+  library(highcharter) #Interactive Plot
+})
+
+locales <- read_excel("./data/tarifas_locales.xlsx")
+locales <- locales |> mutate(`Average Datos (USD/MB)` = round(`Average Datos (USD/MB)`, 5),
+                             `Average Voz (USD/min)` = round(`Average Voz (USD/min)`, 5),
+                             `Average SMS (USD/mensaje)` = round(`Average SMS (USD/mensaje)`, 5)
+                             )
+
+DT::datatable(locales)
+
+locales2 <- pivot_longer(locales, cols=2:4, names_to = 'indicador', values_to = 'tarifas')
+
+hchart(locales2, "column", hcaes(Operadora, tarifas, group = indicador)) |>
+  hc_title(text="<b>Tarifas Minoristas a nivel local Ecuador</b>") |>
+  hc_subtitle(text = 'País: Ecuador') |> 
+  hc_credits(enable = TRUE, text = 'https://github.com/raulavilesrodriguez') |>
+  hc_tooltip(sort = TRUE, table = TRUE) |>
+  hc_caption(text = 'Elaborado: Byron Raúl Avilés Rodríguez') |>
+  hc_add_theme(hc_theme_alone())
+
+
+```
+<br>
+
+
+**Conclusiones**.- Del análisis realizado se determina que:
+
+- Claro y Movistar ofertan planes del servicio de roaming internacional con Chile cuyas tarifas de datos móviles están en los niveles promedios a las tarifas minoristas a nivel local en Ecuador del servicio mencionado.
+- Claro oferta planes del servicio de roaming internacional con Chile cuyas tarifas de SMS están en los niveles promedios a las tarifas minoristas a nivel local en Ecuador del servicio mencionado.
+- Para el servicio de datos móviles ya se está implementando por parte de las operadoras Claro y Movistar  el servicio de roaming internacional a tarifa local.
+

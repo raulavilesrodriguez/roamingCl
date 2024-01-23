@@ -1,0 +1,18 @@
+{
+  "hash": "30ae462cfb9be187c54029b1bcd409ab",
+  "result": {
+    "markdown": "---\ntitle: \"Mercado Mayorista - CNT E.P.\"\nformat: html\neditor: visual\n---\n\n\n#### CNT E.P.\n\nLos cargos IoT de la empresa CNT E.P. con operadoras de Chile se realizan a través de la negociación entre las partes. Para llamadas saliente origen como llamadas locales, SMS y datos móviles **los cargos mayoristas negociados entre operadoras son recíprocos**.\n\n##### Tarifas mayoristas de CNT E.P. (Outbound y Inbound)\n\n\n::: {.cell}\n::: {.cell-output-display}\n```{=html}\n<div class=\"datatables html-widget html-fill-item-overflow-hidden html-fill-item\" id=\"htmlwidget-c7eb86f5c2ae4e559115\" style=\"width:100%;height:auto;\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-c7eb86f5c2ae4e559115\">{\"x\":{\"filter\":\"none\",\"vertical\":false,\"data\":[[\"1\",\"2\",\"3\",\"4\",\"5\"],[\"MOC local (USD/min)\",\"MOC back home (USD/min)\",\"MTC (USD/min)\",\"SMS (USD/mensaje)\",\"Datos (USD/MB)\"],[0.35,0.35,0.2,0.07000000000000001,0.7],[0.065,0.065,0,0.0069,0.0058],[0.1,0.1,0,0.01,0.0075]],\"container\":\"<table class=\\\"display\\\">\\n  <thead>\\n    <tr>\\n      <th> <\\/th>\\n      <th>Servicio/Operador<\\/th>\\n      <th>Claro<\\/th>\\n      <th>Entel<\\/th>\\n      <th>WOM<\\/th>\\n    <\\/tr>\\n  <\\/thead>\\n<\\/table>\",\"options\":{\"columnDefs\":[{\"className\":\"dt-right\",\"targets\":[2,3,4]},{\"orderable\":false,\"targets\":0}],\"order\":[],\"autoWidth\":false,\"orderClasses\":false}},\"evals\":[],\"jsHooks\":[]}</script>\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"site_libs/htmlwidgets-1.6.2/htmlwidgets.js\"></script>\r\n<link href=\"site_libs/datatables-css-0.0.0/datatables-crosstalk.css\" rel=\"stylesheet\" />\r\n<script src=\"site_libs/datatables-binding-0.28/datatables.js\"></script>\r\n<script src=\"site_libs/jquery-3.6.0/jquery-3.6.0.min.js\"></script>\r\n<link href=\"site_libs/dt-core-1.13.4/css/jquery.dataTables.min.css\" rel=\"stylesheet\" />\r\n<link href=\"site_libs/dt-core-1.13.4/css/jquery.dataTables.extra.css\" rel=\"stylesheet\" />\r\n<script src=\"site_libs/dt-core-1.13.4/js/jquery.dataTables.min.js\"></script>\r\n<link href=\"site_libs/crosstalk-1.2.0/css/crosstalk.min.css\" rel=\"stylesheet\" />\r\n<script src=\"site_libs/crosstalk-1.2.0/js/crosstalk.min.js\"></script>\r\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

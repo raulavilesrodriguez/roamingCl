@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Servicio de Roaming Ecuador Chile - Mercado Mayorista - CLARO</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.28/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.4/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.4/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="site_libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+<script src="site_libs/highcharts-9.3.1/highcharts.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-3d.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-more.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/stock.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/map.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/drilldown.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/item-series.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/annotations.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/export-data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/funnel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/heatmap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/treemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sankey.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/organization.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sunburst.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/vector.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/xrange.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/tilemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/venn.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/gantt.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/timeline.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/bullet.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/lollipop.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/series-label.js"></script>
+<script src="site_libs/highcharts-9.3.1/plugins/motion.js"></script>
+<script src="site_libs/highcharts-9.3.1/custom/reset.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/boost.js"></script>
+<script src="site_libs/highchart-binding-0.9.4/highchart.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar docked fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./usuarios.html">Análisis</a></li><li class="breadcrumb-item"><a href="./mayoristaClaro.html">Mercado Mayorista - CLARO</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Servicio de Roaming Ecuador Chile</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Introducción</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Servicio de Roaming Ecuador y Chile</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pedido_info.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Solicitud de Información</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Análisis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./usuarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Usuarios</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mayoristaClaro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Mercado Mayorista - CLARO</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mayoristaMovi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mercado Mayorista - MOVISTAR</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mayoristaCnt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mercado Mayorista - CNT E.P.</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./minorista.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mercado Minorista</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Propuesta</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./propuesta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Propuesta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mercado Mayorista - CLARO</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="claro" class="level4">
+<h4 class="anchored" data-anchor-id="claro">CLARO</h4>
+<p>Los cargos IoT de la empresa CLARO (CONECEL S.A.) con operadoras de Chile se realizan a través de la negociación entre las partes. Para llamadas saliente origen como llamadas locales, SMS y datos móviles <strong>los cargos mayoristas negociados entre operadoras son recíprocos</strong>.</p>
+<section id="tarifas-de-claro-ecuador-cuando-los-usuarios-de-chile-visitan-sus-redes-inbound" class="level5">
+<h5 class="anchored" data-anchor-id="tarifas-de-claro-ecuador-cuando-los-usuarios-de-chile-visitan-sus-redes-inbound">Tarifas de Claro Ecuador cuando los usuarios de Chile visitan sus redes (Inbound)</h5>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-db87cf97fdee3821ec04" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-db87cf97fdee3821ec04">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4"],["Claro","Entel","Telefónica","VTR"],[0.02,0.25,0.11,0.85],[0.025,0.25,0.11,3],[0.015,0.1,0.015,0.85],["0.25","0.6","0.11","Zona 1  $1,68\r\nZona 2 $1,96\r\nZona 3 $1,69\r\nZona 4 $3\r\nZona 5 $2,76\r\nZona 6 $3,29"],["Zona 1  $1,68\r\nZona 2 $1,96\r\nZona 3 $1,69\r\nZona 4 $3\r\nZona 5 $2,76\r\nZona 6 $3,29","Zona 1  $1,68\r\nZona 2 $1,96\r\nZona 3 $1,69\r\nZona 4 $3\r\nZona 5 $2,76\r\nZona 6 $3,29","Zona 1  $1,68\r\nZona 2 $1,96\r\nZona 3 $1,69\r\nZona 4 $3\r\nZona 5 $2,76\r\nZona 6 $3,29","Zona 1  $1,68\r\nZona 2 $1,96\r\nZona 3 $1,69\r\nZona 4 $3\r\nZona 5 $2,76\r\nZona 6 $3,29"],[12,12,12,12],[0.005,0.03,0.35,0.35],[0,0,0,0],[1e-05,0.00015,9.765625e-06,0.0146484375]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Operadora<\/th>\n      <th>Llamadas locales\r\n (a Ecuador)<\/th>\n      <th>Llamadas a Chile<\/th>\n      <th>Llamadas Recibidas<\/th>\n      <th>Llamadas Resto del Mundo<\/th>\n      <th>Llamadas destinos especiales<\/th>\n      <th>Llamadas Satelitales<\/th>\n      <th>SMS enviado<\/th>\n      <th>SMS Recibido<\/th>\n      <th>1Kb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,7,8,9,10]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="tarifas-de-operadoras-de-chile-cuando-los-clientes-de-claro-ecuador-visitan-sus-redes-outbound" class="level5">
+<h5 class="anchored" data-anchor-id="tarifas-de-operadoras-de-chile-cuando-los-clientes-de-claro-ecuador-visitan-sus-redes-outbound">Tarifas de operadoras de Chile cuando los clientes de Claro Ecuador visitan sus redes (Outbound)</h5>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-ea755f8230f8e15b1446" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ea755f8230f8e15b1446">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["Claro","Entel","Telefónica"],[0.02,0.25,0.11],[0.025,0.25,0.11],[0.015,0.1,0.015],[0.25,0.6,0.11],["Zona 1  $2,20\r\nZona 2 $2,35\r\nZona 3 $2,45\r\nZona 4 $2,15\r\nZona 5 $2,60","Zona 1  $2,00\r\nZona 2 $2,48\r\nZona 3 $2,19\r\nZona 4 $2,40\r\nZona 5 $2,65\r\nZona 6 $3,00","Zona 1  $2,40\r\nZona 2 $2,00\r\nZona 3 $2,18\r\nZona 4 $2,46\r\nZona 5 $2,46\r\nZona 6 $3,03\r\nZona 7 $2,64"],[8.5,11.5,7.12],[0.005,0.03,0.35],[0,0,0],[1e-05,0.00015,9.765625e-06]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Operadora<\/th>\n      <th>Llamadas locales  (a Chile)<\/th>\n      <th>Llamadas a Ecuador<\/th>\n      <th>Llamadas Recibidas<\/th>\n      <th>Llamadas Resto del Mundo<\/th>\n      <th>Llamadas destinos especiales<\/th>\n      <th>Llamadas Satelitales<\/th>\n      <th>SMS enviado<\/th>\n      <th>SMS Recibido<\/th>\n      <th>1Kb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,7,8,9,10]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>En este contexto se analiza el tráfico outbound versus el tráfico inbound en el periodo analizado, obteniéndose una relación positiva en los diferentes servicios: - La relación de tráfico de Voz inbound vs outbound es igual a 2.58. - La relación de tráfico SMS inbound vs outbound es igual a 2.03. - La relación de tráfico de Datos móviles inboudn vs outbound es igual a 2.78.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-4e7160410e9855c8d63d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-4e7160410e9855c8d63d">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"<b>Tráfico Voz Claro Roaming Chile-Ecuador<\/b>"},"yAxis":{"title":{"text":"tráfico_voz"},"type":"linear"},"credits":{"enabled":false,"enable":true,"text":"https://github.com/raulavilesrodriguez"},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"VOZ TOTAL TRAFICO Inbound","data":[{"Fecha":"2022-01-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":4236.716666666668,"x":1640995200000,"y":4236.716666666668},{"Fecha":"2022-02-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":3537.633333333333,"x":1643673600000,"y":3537.633333333333},{"Fecha":"2022-03-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":3810.95,"x":1646092800000,"y":3810.95},{"Fecha":"2022-04-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":3502.783333333333,"x":1648771200000,"y":3502.783333333333},{"Fecha":"2022-05-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":3627.950000000002,"x":1651363200000,"y":3627.950000000002},{"Fecha":"2022-06-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":3780.500000000001,"x":1654041600000,"y":3780.500000000001},{"Fecha":"2022-07-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":2733.150000000001,"x":1656633600000,"y":2733.150000000001},{"Fecha":"2022-08-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":4350.683333333335,"x":1659312000000,"y":4350.683333333335},{"Fecha":"2022-09-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":2674.066666666667,"x":1661990400000,"y":2674.066666666667},{"Fecha":"2022-10-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":2312.033333333333,"x":1664582400000,"y":2312.033333333333},{"Fecha":"2022-11-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":2736.983333333334,"x":1667260800000,"y":2736.983333333334},{"Fecha":"2022-12-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":4745.65,"x":1669852800000,"y":4745.65},{"Fecha":"2023-01-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":8006.833333333334,"x":1672531200000,"y":8006.833333333334},{"Fecha":"2023-02-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":7261.950000000003,"x":1675209600000,"y":7261.950000000003},{"Fecha":"2023-03-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":4799.383333333336,"x":1677628800000,"y":4799.383333333336},{"Fecha":"2023-04-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":2996.116666666665,"x":1680307200000,"y":2996.116666666665},{"Fecha":"2023-05-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":3251.199999999999,"x":1682899200000,"y":3251.199999999999},{"Fecha":"2023-06-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":2914.083333333332,"x":1685577600000,"y":2914.083333333332},{"Fecha":"2023-07-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":6888.350000000002,"x":1688169600000,"y":6888.350000000002},{"Fecha":"2023-08-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":3651.933333333332,"x":1690848000000,"y":3651.933333333332},{"Fecha":"2023-09-01","tipo":"VOZ TOTAL TRAFICO Inbound","tráfico_voz":2087.233333333333,"x":1693526400000,"y":2087.233333333333}],"type":"line"},{"name":"VOZ TOTAL TRAFICO Outbound","data":[{"Fecha":"2022-01-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3730.22,"x":1640995200000,"y":3730.22},{"Fecha":"2022-02-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":2365.11,"x":1643673600000,"y":2365.11},{"Fecha":"2022-03-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3282.070000000001,"x":1646092800000,"y":3282.070000000001},{"Fecha":"2022-04-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3844.799999999997,"x":1648771200000,"y":3844.799999999997},{"Fecha":"2022-05-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":2883.26,"x":1651363200000,"y":2883.26},{"Fecha":"2022-06-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":2229.749999999997,"x":1654041600000,"y":2229.749999999997},{"Fecha":"2022-07-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":2753.069999999997,"x":1656633600000,"y":2753.069999999997},{"Fecha":"2022-08-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":4216.740000000002,"x":1659312000000,"y":4216.740000000002},{"Fecha":"2022-09-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3669.470000000003,"x":1661990400000,"y":3669.470000000003},{"Fecha":"2022-10-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3399.940000000001,"x":1664582400000,"y":3399.940000000001},{"Fecha":"2022-11-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3512.5,"x":1667260800000,"y":3512.5},{"Fecha":"2022-12-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":4174.579999999996,"x":1669852800000,"y":4174.579999999996},{"Fecha":"2023-01-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3420.489999999993,"x":1672531200000,"y":3420.489999999993},{"Fecha":"2023-02-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3128.459999999999,"x":1675209600000,"y":3128.459999999999},{"Fecha":"2023-03-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":5708.009999999996,"x":1677628800000,"y":5708.009999999996},{"Fecha":"2023-04-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":5809.639999999989,"x":1680307200000,"y":5809.639999999989},{"Fecha":"2023-05-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":5040.429999999997,"x":1682899200000,"y":5040.429999999997},{"Fecha":"2023-06-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":2417.99,"x":1685577600000,"y":2417.99},{"Fecha":"2023-07-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":217.01,"x":1688169600000,"y":217.01},{"Fecha":"2023-08-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3899.579999999999,"x":1690848000000,"y":3899.579999999999},{"Fecha":"2023-09-01","tipo":"VOZ TOTAL TRAFICO Outbound","tráfico_voz":3633.17,"x":1693526400000,"y":3633.17}],"type":"line"}],"xAxis":{"type":"datetime","title":{"text":"Fecha"},"categories":null},"subtitle":{"text":"Country: Ecuador"},"tooltip":{"shared":true,"formatter":"function(tooltip){\n          function isArray(obj) {\n          return Object.prototype.toString.call(obj) === '[object Array]';\n          }\n\n          function splat(obj) {\n          return isArray(obj) ? obj : [obj];\n          }\n\n          var items = this.points || splat(this), series = items[0].series, s;\n\n          // sort the values\n          items.sort(function(a, b){\n          return ((a.y < b.y) ? -1 : ((a.y > b.y) ? 1 : 0));\n          });\n          items.reverse();\n\n          return tooltip.defaultFormatter.call(this, tooltip);\n        }","useHTML":true,"headerFormat":"<small>{point.key}<\/small><table>","pointFormat":"<tr><td style=\"color: {series.color}\">{series.name}: <\/td><td style=\"text-align: right\"><b>{point.y}<\/b><\/td><\/tr>","footerFormat":"<\/table>"},"caption":{"text":"Elaborated: Byron Raúl Avilés Rodríguez"}},"theme":{"colors":["#2b908f","#90ee7e","#f45b5b","#7798BF","#aaeeee","#ff0066","#eeaaee","#55BF3B"],"chart":{"backgroundColor":{"linearGradient":{"x1":0,"y1":0,"x2":1,"y2":1},"stops":[[0,"#2a2a2b"],[1,"#3e3e40"]]},"style":{"fontFamily":"Unica One, sans-serif"},"plotBorderColor":"#606063"},"title":{"style":{"color":"#E0E0E3","textTransform":"uppercase","fontSize":"20px"}},"subtitle":{"style":{"color":"#E0E0E3","textTransform":"uppercase"}},"xAxis":{"gridLineColor":"#707073","labels":{"style":{"color":"#E0E0E3"}},"lineColor":"#707073","minorGridLineColor":"#505053","tickColor":"#707073","title":{"style":{"color":"#A0A0A3"}}},"yAxis":{"gridLineColor":"#707073","labels":{"style":{"color":"#E0E0E3"}},"lineColor":"#707073","minorGridLineColor":"#505053","tickColor":"#707073","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"rgba(0, 0, 0, 0.85)","style":{"color":"#F0F0F0"}},"plotOptions":{"series":{"dataLabels":{"color":"#B0B0B3"},"marker":{"lineColor":"#333"}},"boxplot":{"fillColor":"#505053"},"candlestick":{"lineColor":"white"},"errorbar":{"color":"white"}},"legend":{"itemStyle":{"color":"#E0E0E3"},"itemHoverStyle":{"color":"#FFF"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#707073"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"rangeSelector":{"buttonTheme":{"fill":"#505053","stroke":"#000000","style":{"color":"#CCC"},"states":{"hover":{"fill":"#707073","stroke":"#000000","style":{"color":"white"}},"select":{"fill":"#000003","stroke":"#000000","style":{"color":"white"}}}},"inputBoxBorderColor":"#505053","inputStyle":{"backgroundColor":"#333","color":"silver"},"labelStyle":{"color":"silver"}},"navigator":{"handles":{"backgroundColor":"#666","borderColor":"#AAA"},"outlineColor":"#CCC","maskFill":"rgba(255,255,255,0.1)","series":{"color":"#7798BF","lineColor":"#A6C7ED"},"xAxis":{"gridLineColor":"#505053"}},"scrollbar":{"barBackgroundColor":"#808083","barBorderColor":"#808083","buttonArrowColor":"#CCC","buttonBackgroundColor":"#606063","buttonBorderColor":"#606063","rifleColor":"#FFF","trackBackgroundColor":"#404043","trackBorderColor":"#404043"},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Unica+One","debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-39fffaa792a1a5ac4c38" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-39fffaa792a1a5ac4c38">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"<b>Tráfico SMS Claro Roaming Chile-Ecuador<\/b>"},"yAxis":{"title":{"text":"tráfico_sms"},"type":"linear"},"credits":{"enabled":false,"enable":true,"text":"https://github.com/raulavilesrodriguez"},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"SMS TOTAL TRAFICO Inbound","data":[{"Fecha":"2022-01-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":5575,"x":1640995200000,"y":5575},{"Fecha":"2022-02-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":5563,"x":1643673600000,"y":5563},{"Fecha":"2022-03-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":5875,"x":1646092800000,"y":5875},{"Fecha":"2022-04-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":4279,"x":1648771200000,"y":4279},{"Fecha":"2022-05-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":3005,"x":1651363200000,"y":3005},{"Fecha":"2022-06-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":4421,"x":1654041600000,"y":4421},{"Fecha":"2022-07-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":3967,"x":1656633600000,"y":3967},{"Fecha":"2022-08-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":3557,"x":1659312000000,"y":3557},{"Fecha":"2022-09-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":2765,"x":1661990400000,"y":2765},{"Fecha":"2022-10-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":3609,"x":1664582400000,"y":3609},{"Fecha":"2022-11-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":3721,"x":1667260800000,"y":3721},{"Fecha":"2022-12-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":5553,"x":1669852800000,"y":5553},{"Fecha":"2023-01-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":7076,"x":1672531200000,"y":7076},{"Fecha":"2023-02-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":7410,"x":1675209600000,"y":7410},{"Fecha":"2023-03-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":6821,"x":1677628800000,"y":6821},{"Fecha":"2023-04-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":5454,"x":1680307200000,"y":5454},{"Fecha":"2023-05-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":4978,"x":1682899200000,"y":4978},{"Fecha":"2023-06-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":4868,"x":1685577600000,"y":4868},{"Fecha":"2023-07-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":10881,"x":1688169600000,"y":10881},{"Fecha":"2023-08-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":5509,"x":1690848000000,"y":5509},{"Fecha":"2023-09-01","tipo":"SMS TOTAL TRAFICO Inbound","tráfico_sms":5380,"x":1693526400000,"y":5380}],"type":"line"},{"name":"SMS TOTAL TRAFICO Outbound","data":[{"Fecha":"2022-01-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":4826,"x":1640995200000,"y":4826},{"Fecha":"2022-02-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":5072,"x":1643673600000,"y":5072},{"Fecha":"2022-03-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":6726,"x":1646092800000,"y":6726},{"Fecha":"2022-04-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":7847,"x":1648771200000,"y":7847},{"Fecha":"2022-05-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":8835,"x":1651363200000,"y":8835},{"Fecha":"2022-06-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":6573,"x":1654041600000,"y":6573},{"Fecha":"2022-07-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":5614,"x":1656633600000,"y":5614},{"Fecha":"2022-08-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":6806,"x":1659312000000,"y":6806},{"Fecha":"2022-09-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":8593,"x":1661990400000,"y":8593},{"Fecha":"2022-10-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":8843,"x":1664582400000,"y":8843},{"Fecha":"2022-11-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":9796,"x":1667260800000,"y":9796},{"Fecha":"2022-12-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":8415,"x":1669852800000,"y":8415},{"Fecha":"2023-01-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":8264,"x":1672531200000,"y":8264},{"Fecha":"2023-02-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":5366,"x":1675209600000,"y":5366},{"Fecha":"2023-03-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":7771,"x":1677628800000,"y":7771},{"Fecha":"2023-04-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":8070,"x":1680307200000,"y":8070},{"Fecha":"2023-05-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":6783,"x":1682899200000,"y":6783},{"Fecha":"2023-06-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":5013,"x":1685577600000,"y":5013},{"Fecha":"2023-07-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":385,"x":1688169600000,"y":385},{"Fecha":"2023-08-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":8133,"x":1690848000000,"y":8133},{"Fecha":"2023-09-01","tipo":"SMS TOTAL TRAFICO Outbound","tráfico_sms":9399,"x":1693526400000,"y":9399}],"type":"line"}],"xAxis":{"type":"datetime","title":{"text":"Fecha"},"categories":null},"subtitle":{"text":"Country: Ecuador"},"tooltip":{"shared":true,"formatter":"function(tooltip){\n          function isArray(obj) {\n          return Object.prototype.toString.call(obj) === '[object Array]';\n          }\n\n          function splat(obj) {\n          return isArray(obj) ? obj : [obj];\n          }\n\n          var items = this.points || splat(this), series = items[0].series, s;\n\n          // sort the values\n          items.sort(function(a, b){\n          return ((a.y < b.y) ? -1 : ((a.y > b.y) ? 1 : 0));\n          });\n          items.reverse();\n\n          return tooltip.defaultFormatter.call(this, tooltip);\n        }","useHTML":true,"headerFormat":"<small>{point.key}<\/small><table>","pointFormat":"<tr><td style=\"color: {series.color}\">{series.name}: <\/td><td style=\"text-align: right\"><b>{point.y}<\/b><\/td><\/tr>","footerFormat":"<\/table>"},"caption":{"text":"Elaborated: Byron Raúl Avilés Rodríguez"}},"theme":{"colors":["#2b908f","#90ee7e","#f45b5b","#7798BF","#aaeeee","#ff0066","#eeaaee","#55BF3B"],"chart":{"backgroundColor":{"linearGradient":{"x1":0,"y1":0,"x2":1,"y2":1},"stops":[[0,"#2a2a2b"],[1,"#3e3e40"]]},"style":{"fontFamily":"Unica One, sans-serif"},"plotBorderColor":"#606063"},"title":{"style":{"color":"#E0E0E3","textTransform":"uppercase","fontSize":"20px"}},"subtitle":{"style":{"color":"#E0E0E3","textTransform":"uppercase"}},"xAxis":{"gridLineColor":"#707073","labels":{"style":{"color":"#E0E0E3"}},"lineColor":"#707073","minorGridLineColor":"#505053","tickColor":"#707073","title":{"style":{"color":"#A0A0A3"}}},"yAxis":{"gridLineColor":"#707073","labels":{"style":{"color":"#E0E0E3"}},"lineColor":"#707073","minorGridLineColor":"#505053","tickColor":"#707073","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"rgba(0, 0, 0, 0.85)","style":{"color":"#F0F0F0"}},"plotOptions":{"series":{"dataLabels":{"color":"#B0B0B3"},"marker":{"lineColor":"#333"}},"boxplot":{"fillColor":"#505053"},"candlestick":{"lineColor":"white"},"errorbar":{"color":"white"}},"legend":{"itemStyle":{"color":"#E0E0E3"},"itemHoverStyle":{"color":"#FFF"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#707073"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"rangeSelector":{"buttonTheme":{"fill":"#505053","stroke":"#000000","style":{"color":"#CCC"},"states":{"hover":{"fill":"#707073","stroke":"#000000","style":{"color":"white"}},"select":{"fill":"#000003","stroke":"#000000","style":{"color":"white"}}}},"inputBoxBorderColor":"#505053","inputStyle":{"backgroundColor":"#333","color":"silver"},"labelStyle":{"color":"silver"}},"navigator":{"handles":{"backgroundColor":"#666","borderColor":"#AAA"},"outlineColor":"#CCC","maskFill":"rgba(255,255,255,0.1)","series":{"color":"#7798BF","lineColor":"#A6C7ED"},"xAxis":{"gridLineColor":"#505053"}},"scrollbar":{"barBackgroundColor":"#808083","barBorderColor":"#808083","buttonArrowColor":"#CCC","buttonBackgroundColor":"#606063","buttonBorderColor":"#606063","rifleColor":"#FFF","trackBackgroundColor":"#404043","trackBorderColor":"#404043"},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Unica+One","debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-a91e9ed5ada5628fd3af" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-a91e9ed5ada5628fd3af">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"<b>Tráfico Datos Claro Roaming Chile-Ecuador<\/b>"},"yAxis":{"title":{"text":"tráfico_datos"},"type":"linear"},"credits":{"enabled":false,"enable":true,"text":"https://github.com/raulavilesrodriguez"},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"DATOS TRAFICO Inbound (MB)","data":[{"Fecha":"2022-01-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":199279.23,"x":1640995200000,"y":199279.23},{"Fecha":"2022-02-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":93275.47999999997,"x":1643673600000,"y":93275.47999999997},{"Fecha":"2022-03-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":213871.7900000001,"x":1646092800000,"y":213871.7900000001},{"Fecha":"2022-04-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":160387.6800000001,"x":1648771200000,"y":160387.6800000001},{"Fecha":"2022-05-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":93748.66999999997,"x":1651363200000,"y":93748.66999999997},{"Fecha":"2022-06-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":200348.9699999999,"x":1654041600000,"y":200348.9699999999},{"Fecha":"2022-07-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":199195.2000000001,"x":1656633600000,"y":199195.2000000001},{"Fecha":"2022-08-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":165103.5400000001,"x":1659312000000,"y":165103.5400000001},{"Fecha":"2022-09-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":151492.6199999999,"x":1661990400000,"y":151492.6199999999},{"Fecha":"2022-10-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":195799.0999999999,"x":1664582400000,"y":195799.0999999999},{"Fecha":"2022-11-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":216202.7499999999,"x":1667260800000,"y":216202.7499999999},{"Fecha":"2022-12-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":215507.7499999999,"x":1669852800000,"y":215507.7499999999},{"Fecha":"2023-01-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":350940.5499999996,"x":1672531200000,"y":350940.5499999996},{"Fecha":"2023-02-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":277058.72,"x":1675209600000,"y":277058.72},{"Fecha":"2023-03-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":328356.03,"x":1677628800000,"y":328356.03},{"Fecha":"2023-04-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":205050.1299999999,"x":1680307200000,"y":205050.1299999999},{"Fecha":"2023-05-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":228029.4799999999,"x":1682899200000,"y":228029.4799999999},{"Fecha":"2023-06-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":161108.78,"x":1685577600000,"y":161108.78},{"Fecha":"2023-07-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":300909.23,"x":1688169600000,"y":300909.23},{"Fecha":"2023-08-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":205048.91,"x":1690848000000,"y":205048.91},{"Fecha":"2023-09-01","tipo":"DATOS TRAFICO Inbound (MB)","tráfico_datos":182839.66,"x":1693526400000,"y":182839.66}],"type":"line"},{"name":"DATOS TRAFICO Outbound (MB)","data":[{"Fecha":"2022-01-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":77117.39,"x":1640995200000,"y":77117.39},{"Fecha":"2022-02-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":67829.16,"x":1643673600000,"y":67829.16},{"Fecha":"2022-03-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":112625.09,"x":1646092800000,"y":112625.09},{"Fecha":"2022-04-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":59906.21,"x":1648771200000,"y":59906.21},{"Fecha":"2022-05-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":48534.21,"x":1651363200000,"y":48534.21},{"Fecha":"2022-06-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":32497.55,"x":1654041600000,"y":32497.55},{"Fecha":"2022-07-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":31491.76,"x":1656633600000,"y":31491.76},{"Fecha":"2022-08-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":52222.66,"x":1659312000000,"y":52222.66},{"Fecha":"2022-09-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":62436.54,"x":1661990400000,"y":62436.54},{"Fecha":"2022-10-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":73271.66,"x":1664582400000,"y":73271.66},{"Fecha":"2022-11-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":98678,"x":1667260800000,"y":98678},{"Fecha":"2022-12-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":66546.48,"x":1669852800000,"y":66546.48},{"Fecha":"2023-01-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":70056.19,"x":1672531200000,"y":70056.19},{"Fecha":"2023-02-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":37559.04,"x":1675209600000,"y":37559.04},{"Fecha":"2023-03-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":70056.71000000001,"x":1677628800000,"y":70056.71000000001},{"Fecha":"2023-04-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":120526.63,"x":1680307200000,"y":120526.63},{"Fecha":"2023-05-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":352158.08,"x":1682899200000,"y":352158.08},{"Fecha":"2023-06-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":319668.52,"x":1685577600000,"y":319668.52},{"Fecha":"2023-07-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":286247.52,"x":1688169600000,"y":286247.52},{"Fecha":"2023-08-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":449827.66,"x":1690848000000,"y":449827.66},{"Fecha":"2023-09-01","tipo":"DATOS TRAFICO Outbound (MB)","tráfico_datos":490005.89,"x":1693526400000,"y":490005.89}],"type":"line"}],"xAxis":{"type":"datetime","title":{"text":"Fecha"},"categories":null},"subtitle":{"text":"Country: Ecuador"},"tooltip":{"shared":true,"formatter":"function(tooltip){\n          function isArray(obj) {\n          return Object.prototype.toString.call(obj) === '[object Array]';\n          }\n\n          function splat(obj) {\n          return isArray(obj) ? obj : [obj];\n          }\n\n          var items = this.points || splat(this), series = items[0].series, s;\n\n          // sort the values\n          items.sort(function(a, b){\n          return ((a.y < b.y) ? -1 : ((a.y > b.y) ? 1 : 0));\n          });\n          items.reverse();\n\n          return tooltip.defaultFormatter.call(this, tooltip);\n        }","useHTML":true,"headerFormat":"<small>{point.key}<\/small><table>","pointFormat":"<tr><td style=\"color: {series.color}\">{series.name}: <\/td><td style=\"text-align: right\"><b>{point.y}<\/b><\/td><\/tr>","footerFormat":"<\/table>"},"caption":{"text":"Elaborated: Byron Raúl Avilés Rodríguez"}},"theme":{"colors":["#2b908f","#90ee7e","#f45b5b","#7798BF","#aaeeee","#ff0066","#eeaaee","#55BF3B"],"chart":{"backgroundColor":{"linearGradient":{"x1":0,"y1":0,"x2":1,"y2":1},"stops":[[0,"#2a2a2b"],[1,"#3e3e40"]]},"style":{"fontFamily":"Unica One, sans-serif"},"plotBorderColor":"#606063"},"title":{"style":{"color":"#E0E0E3","textTransform":"uppercase","fontSize":"20px"}},"subtitle":{"style":{"color":"#E0E0E3","textTransform":"uppercase"}},"xAxis":{"gridLineColor":"#707073","labels":{"style":{"color":"#E0E0E3"}},"lineColor":"#707073","minorGridLineColor":"#505053","tickColor":"#707073","title":{"style":{"color":"#A0A0A3"}}},"yAxis":{"gridLineColor":"#707073","labels":{"style":{"color":"#E0E0E3"}},"lineColor":"#707073","minorGridLineColor":"#505053","tickColor":"#707073","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"rgba(0, 0, 0, 0.85)","style":{"color":"#F0F0F0"}},"plotOptions":{"series":{"dataLabels":{"color":"#B0B0B3"},"marker":{"lineColor":"#333"}},"boxplot":{"fillColor":"#505053"},"candlestick":{"lineColor":"white"},"errorbar":{"color":"white"}},"legend":{"itemStyle":{"color":"#E0E0E3"},"itemHoverStyle":{"color":"#FFF"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#707073"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"rangeSelector":{"buttonTheme":{"fill":"#505053","stroke":"#000000","style":{"color":"#CCC"},"states":{"hover":{"fill":"#707073","stroke":"#000000","style":{"color":"white"}},"select":{"fill":"#000003","stroke":"#000000","style":{"color":"white"}}}},"inputBoxBorderColor":"#505053","inputStyle":{"backgroundColor":"#333","color":"silver"},"labelStyle":{"color":"silver"}},"navigator":{"handles":{"backgroundColor":"#666","borderColor":"#AAA"},"outlineColor":"#CCC","maskFill":"rgba(255,255,255,0.1)","series":{"color":"#7798BF","lineColor":"#A6C7ED"},"xAxis":{"gridLineColor":"#505053"}},"scrollbar":{"barBackgroundColor":"#808083","barBorderColor":"#808083","buttonArrowColor":"#CCC","buttonBackgroundColor":"#606063","buttonBorderColor":"#606063","rifleColor":"#FFF","trackBackgroundColor":"#404043","trackBorderColor":"#404043"},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Unica+One","debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Conclusión</strong>.- Claro en el mercado mayorista del servicio de roaming interncional con las operadoras de Chile, obtuvo beneficios económicos en el periodo analizado (enero 2022 - septiembre 2023), debido a que la relación de tráfico Inbound versus el tráfico Outbound de los servicios de voz, sms y datos es mayor a 1.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
